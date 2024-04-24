@@ -5,10 +5,10 @@ FROM node:21 AS backend-builder
 WORKDIR /app
 
 # code
-COPY package.json ./
+COPY . .
 
 # packages install
-RUN npm install
+RUN npm i
 
 # tests
 RUN npm run test
