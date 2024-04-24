@@ -5,7 +5,7 @@ FROM node:21 AS backend-builder
 WORKDIR /app
 
 # code
-COPY . .
+COPY package.json ./
 
 # packages install
 RUN npm install
